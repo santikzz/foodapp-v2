@@ -1,7 +1,5 @@
 import { Request, Response } from "express";
 import { AuthService } from "../services/auth.service";
-import { AppDataSource } from "../utils/database";
-import { User } from "../entities/User.entitiy";
 
 export class AuthController {
 

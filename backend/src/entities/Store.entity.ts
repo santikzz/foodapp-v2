@@ -14,8 +14,9 @@ export class Store{
     @Column()
     city!: string;
 
-    @Column('geometry', { spatialFeatureType: 'Point' })
-    @Index('store_location_idx', { spatial: true })
+    // @Column('geometry', { spatialFeatureType: 'Point' })
+    // @Index('store_location_idx', { spatial: true })
+    @Column({ type: 'jsonb'})
     location!: string;
 
     @Column({ type: 'int'})

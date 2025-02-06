@@ -1,3 +1,6 @@
+import * as dotenv from "dotenv";
+dotenv.config({ path: "src/.env" });
+
 export const {
     NODE_ENV,
     PORT,

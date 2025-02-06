@@ -19,10 +19,10 @@ app.use('/api/stores', storeRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/users', userRoutes);
 
-app.use((err: Error, req: express.Request, res: express.Response) => {
-  console.error(err.stack);
-  res.status(500).json({ error: 'Something went wrong!' });
-});
+// app.use((err: Error, req: express.Request, res: express.Response) => {
+//   console.error(err.stack);
+//   res.status(500).json({ error: 'Something went wrong!' });
+// });
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
